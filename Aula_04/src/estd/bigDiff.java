@@ -10,12 +10,12 @@ public class bigDiff {
 
 		for (int i = 0; i < nums.length; i++) {
 
-			// Min.
+			// Minimo.
 			if (minimo > nums[i]) {
 				minimo = nums[i];
 			}
 			
-			// Max.
+			// Maximo.
 			if (maximo < nums[i]) {
 				maximo = nums[i];
 			}
