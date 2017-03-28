@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 
 public class Stock {
-
+// declarando
 	private String code;
 	private LocalDate date;
 	private BigDecimal openPrice;
