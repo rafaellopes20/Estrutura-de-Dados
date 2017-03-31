@@ -3,7 +3,7 @@ package com.bovespa;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-public class Stock {
+public class Stock implements Comparable<Stock>{ // implementando classe comparable para numero (pois somente string tem isso)
 // declarando..
 	private String code;
 	private LocalDate date;
@@ -47,6 +47,10 @@ public class Stock {
 	}
 	public void setMaxPrice(BigDecimal maxPrice) {
 		this.maxPrice = maxPrice;
+	}
+	@Override
+	public int compareTo(Stock arg0) {
+		return this.code.compareTo(arg0.getCode());
 	}
 	
 }
