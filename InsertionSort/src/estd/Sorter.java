@@ -27,10 +27,10 @@ public class Sorter {
 		}
 	}
 
-	public void sortString(String[] a) {
+	public void sortString(Comparable[] a) {
 
 		for (int i = 0; i < a.length; i++) {
-			String aux = a[i];
+			Comparable aux = a[i];
 			int j = i - 1;
 			while ((j >= 0) && (a[j].compareTo(aux) > 0)) {
 				a[j + 1] = a[j--];
