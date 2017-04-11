@@ -16,6 +16,9 @@ public class SLinkedList<T> { // <T> pode ser qualquer coisa
 		if(!isEmpty()){
 			first = first.getNext();
 			size--;
+			if(isEmpty()){
+				last = null;
+			}
 		}
 	}
 
