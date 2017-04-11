@@ -6,6 +6,10 @@ public class Node<T> {
 	
 	private T value; // este valor "Object" pode aceitar qualquer tipo de valor (letras e numeros)
 
+	public Node(T t){
+		value = t;
+	}
+	
 	public Node<T> getNext() {
 		return next;
 	}
