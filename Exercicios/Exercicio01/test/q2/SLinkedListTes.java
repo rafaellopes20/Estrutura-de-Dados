@@ -1,4 +1,4 @@
-package estd;
+package q2;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -19,7 +19,16 @@ public class SLinkedListTes {
 		linkedList.add(nodeB);
 		linkedList.add(nodeC);
 		
-		Node<String> result = linkedList.search("B");
+		int result = linkedList.getNodeHeight(nodeA);
+		Assert.assertTrue(result == 2);
+		
+		int result2 = linkedList.getNodeHeight(nodeC);
+		Assert.assertTrue(result2 == 0);
+		
+		int result3 = linkedList.getNodeHeight(new Node<>("F"));
+		Assert.assertTrue(result3 == -1);
+		
+		/*Node<String> result = linkedList.search("B");
 		Assert.assertEquals(nodeB, result);
 		
 		result = linkedList.search("F");
@@ -27,7 +36,8 @@ public class SLinkedListTes {
 		
 		result = linkedList.search("C");
 		Assert.assertEquals(nodeC, result);
-		/*Assert.assertTrue(linkedList.getSize() == 3);
+		
+		Assert.assertTrue(linkedList.getSize() == 3);
 		Assert.assertFalse(linkedList.isEmpty());*/
 	}
 	/*@Test

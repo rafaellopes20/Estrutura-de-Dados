@@ -1,4 +1,4 @@
-package estd;
+package q1;
 
 import org.junit.Assert;
 import org.junit.Test;
