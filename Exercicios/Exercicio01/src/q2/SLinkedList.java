@@ -12,10 +12,10 @@ public class SLinkedList<T> { // <T> pode ser qualquer coisa
 		Node<T> aux = this.getFirst();
 		
 		while(aux != null){
-			if(){
-				
+			if(aux.getNext() == node){
+				result ++;
 			}
-			result ++;
+			aux = aux.getNext();
 		}
 		return result;
 	}
