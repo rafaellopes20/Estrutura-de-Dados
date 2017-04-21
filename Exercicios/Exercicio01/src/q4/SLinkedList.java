@@ -1,10 +1,20 @@
-package q2;
+package q4;
 
 public class SLinkedList<T> { // <T> pode ser qualquer coisa
 
 	private Node<T> first; // node chama-se nó!
 
 	private Node<T> last;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	public int getNodeDepth(Node<T> node){
 		int result = 0;

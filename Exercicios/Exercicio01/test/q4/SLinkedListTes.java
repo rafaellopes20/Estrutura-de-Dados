@@ -1,4 +1,4 @@
-package q2;
+package q4;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -19,7 +19,14 @@ public class SLinkedListTes {
 		linkedList.add(nodeB);
 		linkedList.add(nodeC);
 		
-		int result = linkedList.getNodeDepth(nodeA);
+		
+		
+		
+		
+		
+		
+		
+	/*	int result = linkedList.getNodeDepth(nodeA);
 		System.out.println("valor que esta saindo é: " + result); // coloque print para saber qual o valor saído
 		Assert.assertTrue(result == 0);
 		int result2 = linkedList.getNodeDepth(nodeB);
