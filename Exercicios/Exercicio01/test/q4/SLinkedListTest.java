@@ -1,9 +1,12 @@
-package q3;
+package q4;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-public class SLinkedListTes {
+import q4.Node;
+import q4.SLinkedList;
+
+public class SLinkedListTest{
 
 	@Test
 	public void getSizeTest(){
@@ -18,16 +21,5 @@ public class SLinkedListTes {
 		linkedList.add(nodeA); // é um tipo de variavel
 		linkedList.add(nodeB);
 		linkedList.add(nodeC);
-		
-		int result = linkedList.getNodeHeight(nodeA);
-		Assert.assertTrue(result == 2);
-		
-		int result2 = linkedList.getNodeHeight(nodeC);
-		Assert.assertTrue(result2 == 0);
-		
-		int result3 = linkedList.getNodeHeight(new Node<>("F"));
-		Assert.assertTrue(result3 == -1);
-		
 	}
-
 }
