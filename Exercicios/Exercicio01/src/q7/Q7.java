@@ -1,5 +1,7 @@
 package q7;
 
+//Dado um array N, copie todos os valores de N para uma lista encadeada e retorne a mesma.
+
 public class Q7 {
 
 	public static SLinkedList<String> copyArrayToList(String[] array) {

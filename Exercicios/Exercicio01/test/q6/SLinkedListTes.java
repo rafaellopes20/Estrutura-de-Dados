@@ -3,6 +3,8 @@ package q6;
 import org.junit.Assert;
 import org.junit.Test;
 
+//Dada uma lista duplamente encadeada L, crie uma outra lista cujos elementos estejam na ordem invertida de L.
+
 public class SLinkedListTes {
 
 	@Test

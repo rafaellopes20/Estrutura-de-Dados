@@ -1,5 +1,7 @@
 package q6;
 
+//Dada uma lista duplamente encadeada L, crie uma outra lista cujos elementos estejam na ordem invertida de L.
+
 public class Q6 {
 
 	public static DLinkedList<String> invert(DLinkedList<String> list) {

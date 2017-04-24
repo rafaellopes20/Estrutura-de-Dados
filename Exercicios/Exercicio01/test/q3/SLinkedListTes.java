@@ -3,6 +3,10 @@ package q3;
 import org.junit.Assert;
 import org.junit.Test;
 
+//Altura de um nó N em uma lista encadeada é a distância entre N e o fim da lista. Mais precisamente,
+//a altura de N é o número de passos do caminho que leva de N até o último nó da lista. 
+//Escreva um método que retorne a altura de um nó.
+
 public class SLinkedListTes {
 
 	@Test

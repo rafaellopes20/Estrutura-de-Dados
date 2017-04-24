@@ -1,5 +1,8 @@
 package q4;
 
+//Altere a lista encadeada desenvolvida em sala de aula acrescentando(sobscrevendo)
+//o método equals, usando a seguinte regra: duas listas são iguais quando todos os seus nós são iguais.
+
 public class SLinkedList<T> { // <T> pode ser qualquer coisa
 
 	private Node<T> first; // node chama-se nó!
@@ -7,7 +10,24 @@ public class SLinkedList<T> { // <T> pode ser qualquer coisa
 	private Node<T> last;
 	
 	
-	
+	public boolean EqualsList(SLinkedList<T> list1, SLinkedList<T> list2){
+		Node<T> aux1 = list1.getFirst();//Variavel auxiliar1 referente a lista1 recebida por parametro
+		Node<T> aux2 = list1.getFirst();//Variavel auxiliar2 referente a lista2 recebida por parametro
+		
+		while (aux1 != null && aux2 != null) {
+			if(!aux1.equals(aux2)){
+				return false;
+			}
+			
+			if((aux1 == null && aux2 != null) || (aux1 != null && aux2 == null)){
+				return false;
+			}
+			
+			aux1 = aux1.getNext();
+			aux2 = aux2.getNext();
+		}
+		return true;
+	}
 	
 	
 	
