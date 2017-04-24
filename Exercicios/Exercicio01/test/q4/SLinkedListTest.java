@@ -37,7 +37,7 @@ public class SLinkedListTest {
 		list3.add(nodeH);
 		list3.add(nodeI);
 		
-		SLinkedList<String> listResult = SLinkedList.
+		SLinkedList<String> listResult = new SLinkedList<>();
 		
 		boolean result1 = listResult.EqualsList(list1, list3);
 		Assert.assertTrue(result1);
