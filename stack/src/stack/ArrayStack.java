@@ -9,11 +9,11 @@ public class ArrayStack<E> implements Stack<E> {  // Criando um ArrayStack com n
  
 	private int position = 0; //para saber a posição do array o novo elemento será adicionado
 	
-	public ArrayStack(){
+	public ArrayStack(){ // NÃO RECEBE PARÃMETRO, repare os parenteses ()
 		array = (E[])new Object[20]; //setando um valor fixo para o array, caso o usuário não informe valor (padrão 20)
 	}
 	
-	public ArrayStack(int i){
+	public ArrayStack(int i){// RECEBE PARAMETRO, repare os parenteses (int i)
 		array = (E[])new Object[i]; //setando um valor onde o usuário irá informar o tamanho do array
 	}
 	
@@ -21,10 +21,11 @@ public class ArrayStack<E> implements Stack<E> {  // Criando um ArrayStack com n
 
 	@Override
 	public void push(E e) {// Adiciona um novo dado a pilha (no array do tipo "[]E")
-		if(position == array.length){
-			E[] ArrayCopy = (E[])new Object[array.length*2];
-			System.arraycopy(array, 0, ArrayCopy, 0, array.length-1);
-			array = ArrayCopy;
+		if(position == array.length){ // se a posição for igual ao tamanho do array
+			System.out.println("Redimensionando...");//Para acompanharmos no teste se está criando um novo array se encher
+			E[] ArrayCopy = (E[])new Object[array.length*2]; // Crie um objeto que copia o array antigo e multiplique seu tamanho por 2
+			System.arraycopy(array, 0, ArrayCopy, 0, array.length); // primeiro item, array buscado, 2- a partir de qual numero será copiado, 3- qual o novo array a ser criado, 4- apartir de que numero será passado as cópias...
+			array = ArrayCopy; // os valores do array antigo, devem passar para o array novo, igualando-os
 		}
 		array[position] = e; // após o sinal "=", deve-se colocar o valor que está estanciado (neste caso este em aspas - push(E "e"))
 		position++; // incrementa para ir para o próximo valor

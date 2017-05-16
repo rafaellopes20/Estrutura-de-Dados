@@ -57,4 +57,21 @@ public class ArrayStackTest {
 		Assert.assertEquals(null,  stack.pop());
 	}
 	
+	@Test
+	public void resizeTest(){
+// Aqui sim, iremos dizer qual o tipo de dado que a variavel vai receber Stack<"String"> (pois no código está como "E" (não é um tipo))
+		Stack<String> stack = new ArrayStack<>(2); // Será novo no ArrayStack<>(2), com tamanho inicial 2
+		
+		//Declarando o que o método PUSH vai adicionar na pilha (3 valores no caso)
+		stack.push("A");
+		stack.push("B");
+		stack.push("C");
+		
+		Assert.assertEquals(3,  stack.getSize()); // Se no teste o tamanho da pilha for = 3 (pois declarou-se 3 letras), deu certo.
+		Assert.assertEquals("C",  stack.top()); // Se no teste na posião da pilha for = C deu certo.
+		Assert.assertEquals("C",  stack.top()); // Se no teste na posião da pilha for = C deu certo.
+		Assert.assertEquals(3,  stack.getSize()); // Se no teste o tamanho da pilha for = 3 (pois declarou-se 3 letras), deu certo.
+	}
+	
+	//Dado um array de inteiros (int[]), retorne esse array invertido.
 }
