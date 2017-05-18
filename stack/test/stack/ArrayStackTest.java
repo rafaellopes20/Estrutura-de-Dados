@@ -73,5 +73,18 @@ public class ArrayStackTest {
 		Assert.assertEquals(3,  stack.getSize()); // Se no teste o tamanho da pilha for = 3 (pois declarou-se 3 letras), deu certo.
 	}
 	
-	//Dado um array de inteiros (int[]), retorne esse array invertido.
+	@Test
+	public void invertTest(){ // testando a inversão do array
+		
+		int[] array = {1,2,3,4,5,6,7}; //definindo valores no array que deverá ser invertido
+		int[] arrayInvertido = {7,6,5,4,3,2,1}; //definindo os valores invertidos do array acima
+		int[] arrayResult; // o valor do array será definido aqui.
+		
+		ArrayInverted a = new ArrayInverted(); // criando o array "a" para armazenar o valor da classe ArrayInverted
+		
+		arrayResult = a.Q1(array); // o resultado do array da classe ArrayInverted, será armazenado no Result
+		Assert.assertArrayEquals(arrayInvertido, arrayResult); // Se o arrayInvertido for igual o arrayResultt (resultado), deu certo.
+		
+	}
+	
 }
