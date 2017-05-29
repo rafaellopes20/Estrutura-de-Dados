@@ -63,7 +63,13 @@ public class ArrayStack<E> implements Stack<E> {  // Criando um ArrayStack com n
 	public boolean isEmpty() {
 		return position == 0; // se a posição for igual a 0, significa que a pilha não tem nada.
 	}
-
+	
+	
+	/*
+	 2- Altere a pilha desenvolvida em sala de aula (interface Stack e classe ArrayStack)
+	  acrescentando o método pop(int n). O método deve retornar uma lista contendo n itens
+	  retirados da pilha. Se n for maior que o tamanho da pilha, retornar apenas os elementos disponíveis.
+	 */
 	@Override
 	public List<E> pop(int n) {
 		List<E> list  = new ArrayList<>();
@@ -76,12 +82,21 @@ public class ArrayStack<E> implements Stack<E> {  // Criando um ArrayStack com n
 		}		
 		return list;
 	}
-
+/*
+4- Altere a pilha desenvolvida em sala de aula (interface Stack e classe ArrayStack) acrescentando o método clear().
+  O método deve esvaziar a pilha, retornando um array com todos os seus elementos. 
+ */
 	@Override
 	public List<E> clear() {
 		return pop(getSize()); //retornará apenas o pop(pega o tamanho o todo e tire), e pronto, ja está vazia e armanazenada no exercicio 2
 	}
+	
+	
 
+	/*
+	 5- Altere a pilha desenvolvida em sala de aula (interface Stack e classe ArrayStack) 
+	 acrescentando o método cloneStack(). O método deve retornar uma cópia da pilha atual.
+	 */
 	@Override
 	public Stack<E> cloneStack() { // o que está dentro <AQUI>, significa o tipo da variavel
 		Stack<E> clone = new ArrayStack<>();
