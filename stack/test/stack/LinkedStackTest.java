@@ -3,12 +3,12 @@ package stack;
 import org.junit.Test;
 import org.junit.Assert;
 
-public class ArrayStackTest {
+public class LinkedStackTest {
 
 	@Test
 	public void pushTest(){
 // Aqui sim, iremos dizer qual o tipo de dado que a variavel vai receber Stack<"String"> (pois no código está como "E" (não é um tipo))
-		Stack<String> stack = new ArrayStack<>(); // Será novo no ArrayStack<>(), pois ele que armazenará os valores
+		Stack<String> stack = new LinkedStack<>(); // Será novo no ArrayStack<>(), pois ele que armazenará os valores
 												  // Podemos também colocar o valor do tamanho do array, exemplo: ArrayStack<>(100)
 		
 		Assert.assertEquals(0,  stack.getSize()); // definindo o dado do tamanho da pilha (0)
@@ -26,7 +26,7 @@ public class ArrayStackTest {
 	@Test
 	public void topTest(){
 // Aqui sim, iremos dizer qual o tipo de dado que a variavel vai receber Stack<"String"> (pois no código está como "E" (não é um tipo))
-		Stack<String> stack = new ArrayStack<>(); // Será novo no ArrayStack<>(), pois ele que armazenará os valores
+		Stack<String> stack = new LinkedStack<>(); // Será novo no ArrayStack<>(), pois ele que armazenará os valores
 		
 		//Declarando o que o método PUSH vai adicionar na pilha (3 valores no caso)
 		stack.push("A");
@@ -42,7 +42,7 @@ public class ArrayStackTest {
 	@Test
 	public void popTest(){
 // Aqui sim, iremos dizer qual o tipo de dado que a variavel vai receber Stack<"String"> (pois no código está como "E" (não é um tipo))
-		Stack<String> stack = new ArrayStack<>(); // Será novo no ArrayStack<>(), pois ele que armazenará os valores
+		Stack<String> stack = new LinkedStack<>(); // Será novo no ArrayStack<>(), pois ele que armazenará os valores
 		
 		//Declarando o que o método PUSH vai adicionar na pilha (3 valores no caso)
 		stack.push("A");
@@ -60,7 +60,7 @@ public class ArrayStackTest {
 	@Test
 	public void resizeTest(){
 // Aqui sim, iremos dizer qual o tipo de dado que a variavel vai receber Stack<"String"> (pois no código está como "E" (não é um tipo))
-		Stack<String> stack = new ArrayStack<>(2); // Será novo no ArrayStack<>(2), com tamanho inicial 2
+		Stack<String> stack = new LinkedStack<>(); // Será novo no ArrayStack<>(2), com tamanho inicial 2
 		
 		//Declarando o que o método PUSH vai adicionar na pilha (3 valores no caso)
 		stack.push("A");

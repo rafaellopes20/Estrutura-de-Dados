@@ -27,7 +27,7 @@ public interface Stack<E> { // Dando um nome genérico (o "E" pode ser qualquer l
 	
 	/*
 	 * 4- Altere a pilha desenvolvida em sala de aula (interface Stack e classe ArrayStack)
-		acrescentando o método clear(). O método deve esvaziar a pilha, retornando um array com todos os seus elementos.
+		acrescentando o método clear(). O método deve esvaziar a pilha, retornando uma lista com todos os seus elementos.
 	 * 
 	 */
 	List<E> clear(); // Esta lista limpará todo o array/pilha

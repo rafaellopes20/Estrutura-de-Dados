@@ -66,24 +66,31 @@ public class ArrayStack<E> implements Stack<E> {  // Criando um ArrayStack com n
 
 	@Override
 	public List<E> pop(int n) {
-		List<E> list  = new ArrayList<>(array.length);
+		List<E> list  = new ArrayList<>();
 		
-		for (int i = 0; i < array.length; i++) {
-			list = (List<E>) array[i];
+		for (int i = 0; i < n; i++) {
+			list.add(pop());
+			if(isEmpty()){
+				break;
+			}
 		}		
 		return list;
 	}
 
 	@Override
 	public List<E> clear() {
-		// TODO Auto-generated method stub
-		return null;
+		return pop(getSize()); //retornará apenas o pop(pega o tamanho o todo e tire), e pronto, ja está vazia e armanazenada no exercicio 2
 	}
 
 	@Override
-	public Stack<E> cloneStack() {
-		// TODO Auto-generated method stub
-		return null;
+	public Stack<E> cloneStack() { // o que está dentro <AQUI>, significa o tipo da variavel
+		Stack<E> clone = new ArrayStack<>();
+		for (int i = 0; i < array.length; i++) {
+			if(array[i] != null){
+				clone.push(array[i]);
+			}
+		}
+		return clone;
 	} 
 	
 }
